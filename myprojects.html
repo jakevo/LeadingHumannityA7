@@ -1,4 +1,4 @@
-
+﻿<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
@@ -56,7 +56,7 @@
         <div data-role="navbar" data-iconpos="top">
             <ul>
                 <li>
-                    <a id="p1" data-transition="fade" data-theme="" data-icon=""> </a>
+                    <a onclick="popup()" id="p1" data-transition="fade" data-theme="" data-icon=""> </a>
                 </li>
             </ul>
         </div>
@@ -70,8 +70,8 @@
         <div data-role="navbar" data-iconpos="top">
             <ul>
                 <li>
-                    <a onclick="window.location.href='home.html'" data-transition="fade" data-theme="" data-icon="">
-                        Galaxy Zoo
+                    <a onclick="window.location.href='timeData.html'" data-transition="fade" data-theme="" data-icon="">
+                        Citizen Science (CSTIME)
                     </a>
                 </li>
             </ul>
@@ -103,7 +103,17 @@
 </div>
 
 <script>
+
+
+
 $("#p1").text(localStorage.getItem("projectName"));
+function popup() {
+  alert("No data is available yet because you just created this project!");
+}
+
+
+
+
 </script>
 </body>
 
